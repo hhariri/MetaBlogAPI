@@ -1,9 +1,0 @@
-X:\Projects\BlogNIH\BlogNIH.Tests\bin\Debug\BlogNIH.Tests.dll
-X:\Projects\BlogNIH\BlogNIH.Tests\bin\Debug\BlogNIH.Tests.pdb
-X:\Projects\BlogNIH\BlogNIH.Tests\bin\Debug\BlogNIH.Web.dll
-X:\Projects\BlogNIH\BlogNIH.Tests\bin\Debug\xunit.dll
-X:\Projects\BlogNIH\BlogNIH.Tests\bin\Debug\BlogNIH.Web.pdb
-X:\Projects\BlogNIH\BlogNIH.Tests\obj\Debug\ResolveAssemblyReference.cache
-X:\Projects\BlogNIH\BlogNIH.Tests\obj\Debug\BlogNIH.Tests.dll
-X:\Projects\BlogNIH\BlogNIH.Tests\obj\Debug\BlogNIH.Tests.pdb
-X:\Projects\BlogNIH\BlogNIH.Tests\bin\Debug\Machine.Specifications.dll

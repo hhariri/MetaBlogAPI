@@ -1,5 +1,0 @@
-X:\Projects\BlogNIH\BlogNIH.Web\bin\BlogNIH.Web.dll
-X:\Projects\BlogNIH\BlogNIH.Web\bin\BlogNIH.Web.pdb
-X:\Projects\BlogNIH\BlogNIH.Web\obj\Debug\ResolveAssemblyReference.cache
-X:\Projects\BlogNIH\BlogNIH.Web\obj\Debug\BlogNIH.Web.dll
-X:\Projects\BlogNIH\BlogNIH.Web\obj\Debug\BlogNIH.Web.pdb
