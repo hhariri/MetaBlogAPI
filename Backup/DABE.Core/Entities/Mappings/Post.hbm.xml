@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DABE.Core" namespace="DABE.Core.Entities.Mappings">
-  <class name="DABE.Core.Entities.Post, DABE.Core">
-    <id name="Id">
-      <generator class="hilo"/>
-    </id>
-    <property name="Title"/>
-  </class>  
-</hibernate-mapping>
