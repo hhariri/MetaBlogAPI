@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DABE">
+</Property><Property Name="Solution File" Value="X:\Projects\DABE\DABE.sln">
+</Property><Property Name="User Options File" Value="X:\Projects\DABE\DABE.suo">
+</Property><Property Name="Date" Value="martes, 20 de octubre de 2009">
+</Property><Property Name="Time" Value="17:23">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DABE.sln" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DABE.suo" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.suo">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\DABE.Web.csproj" Description="Project file successfully backed up as X:\Projects\DABE\Backup\DABE.Web\DABE.Web.csproj">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Controllers\HomeController.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Controllers\HomeController.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Controllers\PostController.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Controllers\PostController.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Global.asax.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Global.asax.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Properties\AssemblyInfo.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Global.asax" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Global.asax">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Web.config" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Web.config">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Content\Site.css" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Content\Site.css">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery-1.3.2.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery-1.3.2.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery-1.3.2.min.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery-1.3.2.min.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery-1.3.2-vsdoc.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery-1.3.2-vsdoc.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery-1.3.2.min-vsdoc.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery-1.3.2.min-vsdoc.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery.validate.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery.validate.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery.validate.min.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery.validate.min.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\jquery.validate-vsdoc.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\jquery.validate-vsdoc.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Scripts\MicrosoftMvcJQueryValidation.js" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Scripts\MicrosoftMvcJQueryValidation.js">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Views\Home\About.aspx" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Views\Home\About.aspx">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Views\Home\Index.aspx" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Views\Home\Index.aspx">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Views\Shared\Error.aspx" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Views\Shared\Error.aspx">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Views\Shared\LogOnUserControl.ascx" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Views\Shared\LogOnUserControl.ascx">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Views\Shared\Site.Master" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Views\Shared\Site.Master">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\Views\Web.config" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Web\Views\Web.config">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\DABE.Web.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DABE.Web" Source="DABE.Web\DABE.Web.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\DABE.Tests.csproj" Description="Project file successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\DABE.Tests.csproj">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\Core\PostSpecifications.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\Core\PostSpecifications.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\Properties\AssemblyInfo.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\Web\PostControllerSpecifications.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\Web\PostControllerSpecifications.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\Web\Routes\RouteFacts.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\Web\Routes\RouteFacts.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\3rdParty\xunit.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\3rdParty\xunit.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\3rdParty\CommandLine.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\3rdParty\CommandLine.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\3rdParty\Machine.Specifications.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\3rdParty\Machine.Specifications.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\3rdParty\Machine.Specifications.Reporting.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\3rdParty\Machine.Specifications.Reporting.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\3rdParty\Machine.Specifications.XUnit.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\3rdParty\Machine.Specifications.XUnit.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\3rdParty\TestDriven.Framework.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Tests\3rdParty\TestDriven.Framework.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\DABE.Tests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DABE.Tests" Source="DABE.Tests\DABE.Tests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\DABE.Core.csproj" Description="Project file successfully backed up as X:\Projects\DABE\Backup\DABE.Core\DABE.Core.csproj">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\Entities\Post.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\Entities\Post.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\InfrastructureException.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\InfrastructureException.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\Queries\PostQuery.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\Queries\PostQuery.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\Properties\AssemblyInfo.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\SessionManager.cs" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\SessionManager.cs">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\nhibernate-configuration.xsd" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\nhibernate-configuration.xsd">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\nhibernate-mapping.xsd" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\nhibernate-mapping.xsd">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\NHibernate.ByteCode.Castle.Tests.dll.config" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\NHibernate.ByteCode.Castle.Tests.dll.config">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Antlr3.Runtime.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Antlr3.Runtime.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Castle.Core.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Castle.Core.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Castle.Core.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Castle.Core.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Castle.DynamicProxy2.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Castle.DynamicProxy2.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Castle.DynamicProxy2.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Castle.DynamicProxy2.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Iesi.Collections.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Iesi.Collections.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\Iesi.Collections.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\Iesi.Collections.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\log4net.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\log4net.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\log4net.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\log4net.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\NHibernate.ByteCode.Castle.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\NHibernate.ByteCode.Castle.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\NHibernate.ByteCode.Castle.Tests.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\NHibernate.ByteCode.Castle.Tests.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\NHibernate.ByteCode.Castle.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\NHibernate.ByteCode.Castle.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\NHibernate.dll" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\NHibernate.dll">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\3rdParty\NHibernate.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\3rdParty\NHibernate.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\Entities\Mappings\Post.hbm.xml" Description="File successfully backed up as X:\Projects\DABE\Backup\DABE.Core\Entities\Mappings\Post.hbm.xml">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\DABE.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DABE.Core" Source="DABE.Core\DABE.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DABE.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DABE.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DABE.Web" Source="DABE.Web\DABE.Web.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DABE.Tests" Source="DABE.Tests\DABE.Tests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DABE.Core" Source="DABE.Core\DABE.Core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

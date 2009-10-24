@@ -1,0 +1,100 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:DABE.Core.ISpecification">
+      <Item value="ExecuteQuery" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ICriteria">
+      <Item value="List" priority="2" />
+      <Item value="Add" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Mock`1">
+      <Item value="Setup" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DABE.Core.IPostRepository">
+      <Item value="GetPosts" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
+      <Item value="Returns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="Func&lt;ICriteria&gt;" priority="0" />
+      <Item value="NHibernate" priority="0" />
+      <Item value="Cfg" priority="0" />
+      <Item value="Environment" priority="0" />
+      <Item value="PostRepository" priority="0" />
+      <Item value="Session" priority="0" />
+      <Item value="SessionManager" priority="1" />
+      <Item value="Dispose" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DABE.Core.PostRepository">
+      <Item value="GetPosts" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="CreateCriteria" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate.Criterion.Restrictions">
+      <Item value="Eq" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DABE.Tests.Core.PostQuery">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:ISpecification.cs" caret="305" fromTop="14" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:IPostRepository.cs" caret="256" fromTop="13" />
+      <File id="065FD328-7E6A-4D76-8A3C-131535CFB2CB/d:Controllers/f:PostController.cs" caret="393" fromTop="17" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="737" fromTop="20" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:SessionManager.cs" caret="1085" fromTop="34" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/d:Posts/f:PostQuery.cs" caret="389" fromTop="17" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:with_predefined_posts.cs" caret="185" fromTop="8" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:InMemoryDatabase.cs" caret="264" fromTop="10" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="362" fromTop="14" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:InMemoryDatabase.cs" caret="263" fromTop="9" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="381" fromTop="10" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="997" fromTop="34" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="1106" fromTop="31" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="997" fromTop="29" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:with_predefined_posts.cs" caret="40" fromTop="2" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="555" fromTop="12" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:PostControllerSpecifications.cs" caret="732" fromTop="20" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="388" fromTop="14" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="782" fromTop="17" />
+      <File id="065FD328-7E6A-4D76-8A3C-131535CFB2CB/d:Controllers/f:PostController.cs" caret="409" fromTop="19" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:ISpecification.cs" caret="381" fromTop="17" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="782" fromTop="17" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="782" fromTop="9" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="782" fromTop="17" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="782" fromTop="15" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:ISpecification.cs" caret="165" fromTop="8" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:ISpecification.cs" caret="236" fromTop="12" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="320" fromTop="4" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="561" fromTop="16" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:IPostRepository.cs" caret="245" fromTop="11" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:IPostRepository.cs" caret="398" fromTop="18" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="782" fromTop="16" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/d:Posts/f:PostQuery.cs" caret="92" fromTop="4" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:InMemoryDatabase.cs" caret="1179" fromTop="8" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:InMemoryDatabase.cs" caret="1148" fromTop="8" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:SessionManager.cs" caret="1190" fromTop="38" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:InMemoryDatabase.cs" caret="1353" fromTop="27" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:InMemoryDatabase.cs" caret="311" fromTop="12" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:with_predefined_posts.cs" caret="185" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>

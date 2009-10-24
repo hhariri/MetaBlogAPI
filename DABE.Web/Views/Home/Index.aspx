@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Post>>" %>
+<%@ Import Namespace="DABE.Core.Entities"%>
 
 <asp:Content ID="indexTitle" ContentPlaceHolderID="TitleContent" runat="server">
     Home Page

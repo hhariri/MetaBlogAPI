@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA7E1198-859F-4C88-93CC-A5FFB7798896}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DABE.Core</RootNamespace>
+    <AssemblyName>DABE.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Post.cs" />
+    <Compile Include="InfrastructureException.cs" />
+    <Compile Include="Queries\PostQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3rdParty\Antlr3.Runtime.dll" />
+    <Content Include="3rdParty\Castle.Core.dll" />
+    <Content Include="3rdParty\Castle.Core.xml" />
+    <Content Include="3rdParty\Castle.DynamicProxy2.dll" />
+    <Content Include="3rdParty\Castle.DynamicProxy2.xml" />
+    <Content Include="3rdParty\Iesi.Collections.dll" />
+    <Content Include="3rdParty\Iesi.Collections.xml" />
+    <Content Include="3rdParty\log4net.dll" />
+    <Content Include="3rdParty\log4net.xml" />
+    <Content Include="3rdParty\NHibernate.ByteCode.Castle.dll" />
+    <Content Include="3rdParty\NHibernate.ByteCode.Castle.Tests.dll" />
+    <Content Include="3rdParty\NHibernate.ByteCode.Castle.xml" />
+    <Content Include="3rdParty\NHibernate.dll" />
+    <Content Include="3rdParty\NHibernate.xml" />
+    <Content Include="Entities\Mappings\Post.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3rdParty\nhibernate-configuration.xsd" />
+    <None Include="3rdParty\nhibernate-mapping.xsd" />
+    <None Include="3rdParty\NHibernate.ByteCode.Castle.Tests.dll.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

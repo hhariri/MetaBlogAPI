@@ -1,0 +1,66 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Routes/f:RouteFacts.cs" caret="3250" fromTop="27" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:Post.cs" caret="48" fromTop="2" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="803" fromTop="27" />
+      <File id="065FD328-7E6A-4D76-8A3C-131535CFB2CB/d:Controllers/f:PostController.cs" caret="226" fromTop="10" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="154" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Routes/f:RouteFacts.cs" caret="104" fromTop="5" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Routes/f:RouteFacts.cs" caret="3250" fromTop="27" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="244" fromTop="9" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="353" fromTop="13" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="456" fromTop="18" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="176" fromTop="6" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="792" fromTop="30" />
+      <File id="BA7E1198-859F-4C88-93CC-A5FFB7798896/f:Post.cs" caret="22" fromTop="0" />
+      <File id="065FD328-7E6A-4D76-8A3C-131535CFB2CB/d:Controllers/f:PostController.cs" caret="58" fromTop="3" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="700" fromTop="23" />
+      <File id="065FD328-7E6A-4D76-8A3C-131535CFB2CB/d:Controllers/f:PostController.cs" caret="230" fromTop="9" />
+      <File id="065FD328-7E6A-4D76-8A3C-131535CFB2CB/d:Controllers/f:PostController.cs" caret="226" fromTop="10" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Web/f:NoName.cs" caret="812" fromTop="27" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="376" fromTop="19" />
+      <File id="E14A6F45-A426-47C9-AC4F-71734DF2084B/d:Core/f:PostSpecifications.cs" caret="291" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewResult">
+      <Item value="ViewName" priority="0" />
+      <Item value="ViewData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Equals" priority="0" />
+      <Item value="ShouldEqual" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewDataDictionary">
+      <Item value="Model" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="Equals" priority="0" />
+      <Item value="ShouldBeOfType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="Runner" priority="0" />
+      <Item value="Impl" priority="0" />
+      <Item value="NotImplementedException" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
