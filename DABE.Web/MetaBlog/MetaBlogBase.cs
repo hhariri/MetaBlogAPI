@@ -1,6 +1,9 @@
+using System.Xml.Linq;
+
 namespace DABE.Web.MetaBlog
 {
-    public class MetaBlogBase
+    public abstract class MetaBlogBase
     {
+        public abstract void Load(XDocument data);
     }
 }

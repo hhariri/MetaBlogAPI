@@ -11,7 +11,7 @@ namespace DABE.Web.Controllers
     public class MetaBlogController : Controller
     {
         
-        public ActionResult GetUsersBlogs(MetaBlogUser metaBlogUser)
+        public ActionResult GetUsersBlogs(MetaBlogGetUsersBlogRequest metaBlogGetUsersBlogRequest)
         {
             // Authenticate user....
             // Get list of blogs for user

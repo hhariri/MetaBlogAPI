@@ -83,10 +83,10 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="MetaBlog\XmlRpcSerializer.cs" />
-    <Compile Include="MetaBlog\MetaBlogGetUsersBlogRequest.cs" />
+    <Compile Include="MetaBlog\MetaBlogGetUsersBlogRequestBinder.cs" />
     <Compile Include="MetaBlog\MetaBlogBase.cs" />
     <Compile Include="Controllers\MetaBlogController.cs" />
-    <Compile Include="MetaBlog\MetaBlogUser.cs" />
+    <Compile Include="MetaBlog\MetaBlogGetUsersBlogRequest.cs" />
     <Compile Include="Models\NewPostViewModel.cs" />
     <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Global.asax.cs">
