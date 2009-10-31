@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
-using DABE.Core.Controllers;
 using DABE.Core.Entities;
 using DABE.Core.Repositories;
 using DABE.Specifications.Helpers;
@@ -58,5 +57,23 @@ namespace DABE.Tests.Web
 
         static ViewResult viewResult;
         static PostController postController;
+    }
+
+    public class when_creating_a_new_post_with_valid_data
+    {
+        Establish context = () =>
+        {
+
+        };
+
+        Because of = () =>
+        {
+
+        };
+
+        It should_redirect_to_home = () =>
+        {
+
+        };
     }
 }

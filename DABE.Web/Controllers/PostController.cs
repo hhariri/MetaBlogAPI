@@ -7,7 +7,7 @@ using DABE.Core.Repositories;
 
 namespace DABE.Web.Controllers
 {
-    public class PostController: Controller
+    public class PostController: BaseController
     {
         readonly IPostRepository _postRepository;
 
@@ -34,5 +34,6 @@ namespace DABE.Web.Controllers
 
             return View(post);
         }
+
     }
 }
