@@ -83,7 +83,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="MetaBlog\XmlRpcSerializer.cs" />
-    <Compile Include="MetaBlog\MetaBlogUserBinder.cs" />
+    <Compile Include="MetaBlog\MetaBlogGetUsersBlogRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogBase.cs" />
     <Compile Include="Controllers\MetaBlogController.cs" />
     <Compile Include="MetaBlog\MetaBlogUser.cs" />

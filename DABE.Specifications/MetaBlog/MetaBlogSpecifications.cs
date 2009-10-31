@@ -63,13 +63,46 @@ namespace DABE.Specifications.MetaBlog
 
         It should_returm_a_struct_xmlrpc_packet = () =>
         {
-            xml.Elements("struct").Count().ShouldEqual(1);
-            xml.Elements("member").Count().ShouldEqual(2);
             xml.Element("methodResponse").Element("params").Element("param").Element("value").Element("struct").Element(
                 "member").Element("name").Value.ShouldEqual("key1");
         };
 
         static Dictionary<string, object> structure;
         static XDocument xml;
+    }
+
+    public class when_serializing_a_list_of_dictionaries_to_xmlrpc
+    {
+        Establish context = () =>
+        {
+            var structure1 = new Dictionary<string, object>();
+
+            structure1.Add("key1", "value1");
+            structure1.Add("key2", "value2");
+
+            var structure2 = new Dictionary<string, object>();
+
+            structure2.Add("key1", "value1");
+            structure2.Add("key2", "value2");
+
+            array = new List<Dictionary<string, object>>();
+
+            array.Add(structure1);
+            array.Add(structure2);
+        };
+
+        Because of = () =>
+        {
+            xml = XmlRpcSerializer.ToXmlArrayResponse(array);
+        };
+
+        It should_returm_an_array_of_struct_xmlrpc_packet = () =>
+        {
+            xml.Element("methodResponse").Element("params").Element("param").Element("value").Element("array").Element("data").Element("value").Element("struct").Element(
+                "member").Element("name").Value.ShouldEqual("key1");
+        };
+
+        static XDocument xml;
+        static List<Dictionary<string, object>> array;
     }
 }
