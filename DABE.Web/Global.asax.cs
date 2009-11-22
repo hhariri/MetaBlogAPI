@@ -27,7 +27,7 @@ namespace DABE.Web
 
             Bootstrapper.Init();
             ControllerBuilder.Current.SetControllerFactory(new StructureMapControllerFactory());
-            ModelBinders.Binders.Add(typeof(MetaBlogGetUsersBlogRequest), new MetaBlogGetUsersBlogRequestBinder());
+            ModelBinders.Binders.Add(typeof(MetaBlogUserInfoRequest), new MetaBlogRequestBinder<MetaBlogUserInfoRequest>());
         }
     }
 }

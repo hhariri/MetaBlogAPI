@@ -62,9 +62,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>3rdParty\Castle.DynamicProxy2.dll</HintPath>
     </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DABE.Core\3rdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
-    <Reference Include="Machine.Specifications, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="Machine.Specifications.XUnit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Machine.Specifications, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Moq, Version=4.0.812.4, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>3rdParty\Moq.dll</HintPath>
@@ -95,11 +98,12 @@
     <Reference Include="xunit, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\PostSpecifications.cs" />
-    <Compile Include="MetaBlog\MetaBlogSpecifications.cs" />
+    <Compile Include="Core\RepositorySpecifications.cs" />
+    <Compile Include="Helpers\with_predefined_blogs.cs" />
+    <Compile Include="Web\MetaBlog\SerializationSpecifications.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Helpers\InMemoryDatabase.cs" />
-    <Compile Include="Web\PostControllerSpecifications.cs" />
+    <Compile Include="Web\MetaBlog\MetaBlogControllerSpecifications.cs" />
     <Compile Include="Web\Routes\RouteFacts.cs" />
     <Compile Include="Helpers\with_predefined_posts.cs" />
   </ItemGroup>
@@ -176,7 +180,9 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy $(ProjectDir)\3rdParty\sqlite3.dll $(TargetDir)
-copy $(ProjectDir)\3rdParty\Sqlite32\*.* $(TargetDir)</PostBuildEvent>
+    <PostBuildEvent>
+    
+    copy $(ProjectDir)\3rdParty\sqlite3.dll $(TargetDir)
+    copy $(ProjectDir)\3rdParty\Sqlite32\*.* $(TargetDir)</PostBuildEvent>
   </PropertyGroup>
 </Project>

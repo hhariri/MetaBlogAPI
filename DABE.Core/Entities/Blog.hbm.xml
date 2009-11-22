@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DABE.Core" namespace="DABE.Core.Entities">
+  <class name="DABE.Core.Entities.Blog, DABE.Core">
+    <id name="Id">
+      <generator class="hilo"/>
+    </id>
+    <property name="Name"/>
+    <many-to-one name="User" column="UserId"/>
+    <set name="Posts" cascade="all" inverse="true">
+      <key column="PostId" />
+      <one-to-many class="Post" />
+    </set>
+  </class>  
+</hibernate-mapping>

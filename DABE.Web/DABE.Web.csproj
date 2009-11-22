@@ -82,13 +82,14 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="MetaBlog\MetaBlogEditPostRequest.cs" />
+    <Compile Include="MetaBlog\MetaBlogGetTemplateRequest.cs" />
+    <Compile Include="MetaBlog\MetaBlogNewPostRequest.cs" />
+    <Compile Include="MetaBlog\MetaBlogSetTemplateRequest.cs" />
     <Compile Include="MetaBlog\XmlRpcSerializer.cs" />
-    <Compile Include="MetaBlog\MetaBlogGetUsersBlogRequestBinder.cs" />
+    <Compile Include="MetaBlog\MetaBlogRequestBinder.cs" />
     <Compile Include="MetaBlog\MetaBlogBase.cs" />
-    <Compile Include="Controllers\MetaBlogController.cs" />
-    <Compile Include="MetaBlog\MetaBlogGetUsersBlogRequest.cs" />
-    <Compile Include="Models\NewPostViewModel.cs" />
-    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="MetaBlog\MetaBlogUserInfoRequest.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -123,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

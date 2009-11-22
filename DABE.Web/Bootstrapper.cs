@@ -24,7 +24,6 @@ namespace DABE.Web
                             InstanceScope.Singleton);
                         x.ForRequestedType<SessionManager>().TheDefaultIsConcreteType<SessionManager>().CacheBy(
                             InstanceScope.Singleton);
-                        x.ForRequestedType<IPostRepository>().TheDefaultIsConcreteType<PostRepository>();
                     }
                 
                 );
