@@ -12,8 +12,6 @@ namespace DABE.Specifications.Core
     {
         Establish context = () =>
         {
-
-
             blogRepository = new BlogRepository(); 
         };
 
@@ -64,12 +62,12 @@ namespace DABE.Specifications.Core
 
         Because of = () =>
         {
-            blogs = blogRepository.GetAll();
+            blogs = blogRepository.GetAll().ToList();
         };
 
         It should_return_list_of_blogs = () =>
         {
-	        blogs.Count().ShouldEqual(2);
+	        blogs.Count().ShouldEqual(3);
         };
 
         static IList<Blog> blogs;
@@ -86,7 +84,7 @@ namespace DABE.Specifications.Core
 
         Because of = () =>
         {
-            blogs = blogRepository.GetAll(x => x.User.Username == blog1_username);
+            blogs = blogRepository.GetAll(x => x.User.Username == blog1_username).ToList();
         };
 
         It should_return_all_blogs_of_that_user = () =>
@@ -100,7 +98,7 @@ namespace DABE.Specifications.Core
 
     }
 
-    public class when_retrieving_posts_by_blog_name: with_large_amounts_of_predefined_data
+    public class when_retrieving_posts_by_blog_name: with_x_predefined_blogs_and_posts
     {
         Establish context = () =>
         {
@@ -110,7 +108,7 @@ namespace DABE.Specifications.Core
 
         Because of = () =>
         {
-            posts = postRepository.GetAll( x => x.Blog.Name == String.Format("Blog{0}", 5));
+            posts = postRepository.GetAll().Where(x => x.Blog.Name == String.Format("Blog{0}", 5)).ToList();
         };
 
         It should_retrieve_blog_posts = () =>

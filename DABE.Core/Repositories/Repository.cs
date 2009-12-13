@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using DABE.Core.Infrastructure;
+using NHibernate;
 using NHibernate.Linq;
 
 namespace DABE.Core.Repositories
 {
     public class Repository<T, TKey>: IRepository<T, TKey> where T: class
     {
-        public IList<T> GetAll()
+        public IQueryable<T> GetAll()
         {
-            return SessionManager.Current.CreateCriteria<T>().List<T>();
+            var qry = from item in SessionManager.Current.Linq<T>()
+                      select item;
+
+            return qry;
         }
 
-        public IList<T> GetAll(Expression<Func<T, bool>> query)
+        public IQueryable<T> GetAll(Expression<Func<T, bool>> query)
         {
             var qry = from item in SessionManager.Current.Linq<T>()
                     select item;
 
             qry = qry.Where<T>(query);
 
-            return qry.ToList();
+            return qry;
 
         }
 

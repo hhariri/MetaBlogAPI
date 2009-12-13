@@ -8,8 +8,8 @@ namespace DABE.Core.Repositories
 {
     public interface IRepository<T, TKey> where T: class
     {
-        IList<T> GetAll();
-        IList<T> GetAll(Expression<Func<T, bool>> query);
+        IQueryable<T> GetAll();
+        IQueryable<T> GetAll(Expression<Func<T, bool>> query);
         T GetById(TKey id);
         void Save(T obj);
     }

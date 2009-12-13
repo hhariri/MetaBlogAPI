@@ -9,7 +9,7 @@ namespace DABE.Core.Infrastructure
         static ISessionFactory _sessionFactory;
         static ISessionStorage _sessionStorage;
 
-        public SessionManager(Configuration configuration, ISessionStorage sessionStorage)
+        public static void Init(Configuration configuration, ISessionStorage sessionStorage)
         {
             _sessionFactory = configuration.BuildSessionFactory();
             _sessionStorage = sessionStorage;

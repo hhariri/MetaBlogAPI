@@ -1,33 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
-using System.Web;
+using System.Linq;
+using System.Text;
 using DABE.Core.Entities;
 using DABE.Core.Infrastructure;
-using DABE.Core.Repositories;
 using NHibernate.Dialect;
 using NHibernate.Driver;
-using StructureMap;
+using NHibernate.Tool.hbm2ddl;
 using Configuration = NHibernate.Cfg.Configuration;
 using Environment = NHibernate.Cfg.Environment;
 
-namespace DABE.Web
+namespace DABE.Setup
 {
-    public static class Bootstrapper
+    class Program
     {
-        public static void Init(HttpApplication httpApplication)
+        static void Main(string[] args)
         {
-            ObjectFactory.Initialize(
-
-                    x =>
-                    {
-                   
-                        x.ForRequestedType<IBlogRepository>().TheDefaultIsConcreteType<BlogRepository>();
-                    }
-
-
-                );
-
-
             var configuration = new Configuration()
                 .SetProperty(Environment.ReleaseConnections, "on_close")
                 .SetProperty(Environment.Dialect, typeof(MsSql2008Dialect).AssemblyQualifiedName)
@@ -37,7 +26,21 @@ namespace DABE.Web
 
             configuration.AddAssembly(typeof(Blog).Assembly);
 
-            SessionManager.Init(configuration, new HttpSessionStorage(httpApplication));
+            SessionManager.Init(configuration, new SingleSessionStorage());
+
+            var session = SessionManager.Current;
+
+            new SchemaExport(configuration).Execute(false, true, false, session.Connection, null);
+
+            if (args.Count() > 0)
+            {
+                if (string.Compare(args[0], "/DEMODATA", StringComparison.InvariantCultureIgnoreCase) == 0)
+                {
+                    
+                    DemoData.SetupData(session);
+                }
+            }
+
         }
     }
 }

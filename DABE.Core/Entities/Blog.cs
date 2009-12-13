@@ -9,6 +9,7 @@ namespace DABE.Core.Entities
 
         public virtual long Id { get; private set; }
         public virtual string Name { get; set; }
+        public virtual string Url { get; set; }
         public virtual User User { get; set; }
        
         public virtual ISet<Post> Posts

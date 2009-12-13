@@ -2,7 +2,7 @@
 
 namespace DABE.Web.MetaBlog
 {
-    public class MetaBlogGetTemplateRequest: MetaBlogBase
+    public class MetaBlogGetTemplateRequest: MetaBlogRequestBase
     {
         public string BlogId { get; set; }
         public string TemplateType { get; set; }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using DABE.Core.Entities;
+﻿using DABE.Core.Entities;
 
 namespace DABE.Core.Repositories
 {

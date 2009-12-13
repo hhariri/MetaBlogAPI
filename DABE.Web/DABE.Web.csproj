@@ -40,10 +40,10 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>3rdParty\NHibernate.dll</HintPath>
-    </Reference>
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
     <Reference Include="StructureMap, Version=2.5.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -82,13 +82,15 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MetaBlogController.cs" />
     <Compile Include="MetaBlog\MetaBlogEditPostRequest.cs" />
+    <Compile Include="MetaBlog\MetaBlogFormat.cs" />
     <Compile Include="MetaBlog\MetaBlogGetTemplateRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogNewPostRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogSetTemplateRequest.cs" />
     <Compile Include="MetaBlog\XmlRpcSerializer.cs" />
     <Compile Include="MetaBlog\MetaBlogRequestBinder.cs" />
-    <Compile Include="MetaBlog\MetaBlogBase.cs" />
+    <Compile Include="MetaBlog\MetaBlogRequestBase.cs" />
     <Compile Include="MetaBlog\MetaBlogUserInfoRequest.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -97,6 +99,12 @@
     <Compile Include="StructureMapControllerFactory.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="3rdParty\Castle.Core.dll" />
+    <Content Include="3rdParty\Castle.DynamicProxy2.dll" />
+    <Content Include="3rdParty\log4net.dll" />
+    <Content Include="3rdParty\log4net.xml" />
+    <Content Include="3rdParty\NHibernate.ByteCode.Castle.dll" />
+    <Content Include="3rdParty\NHibernate.dll" />
     <Content Include="3rdParty\StructureMap.dll" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -156,8 +164,8 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>40350</DevelopmentServerPort>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>5000</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

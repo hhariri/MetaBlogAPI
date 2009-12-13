@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace DABE.Web.MetaBlog
 {
-    public class MetaBlogUserInfoRequest: MetaBlogBase
+    public class MetaBlogUserInfoRequest: MetaBlogRequestBase
     {
     }
 }

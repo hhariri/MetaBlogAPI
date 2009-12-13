@@ -8,5 +8,9 @@
     <h2>About</h2>
     <p>
         Put content here.
-    </p>
+        
+</div>
+    </div>
+        
+    </>
 </asp:Content>

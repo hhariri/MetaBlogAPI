@@ -3,7 +3,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using DABE.Core.Infrastructure;
 using DABE.Web.MetaBlog;
+using NHibernate.Cfg;
 
 namespace DABE.Web
 {
@@ -12,6 +14,7 @@ namespace DABE.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("favico.ico");
 
             routes.MapRoute(
                 "Default",                                              // Route name
@@ -23,9 +26,12 @@ namespace DABE.Web
 
         protected void Application_Start()
         {
+            
             RegisterRoutes(RouteTable.Routes);
 
-            Bootstrapper.Init();
+
+            Bootstrapper.Init(this);
+
             ControllerBuilder.Current.SetControllerFactory(new StructureMapControllerFactory());
             ModelBinders.Binders.Add(typeof(MetaBlogUserInfoRequest), new MetaBlogRequestBinder<MetaBlogUserInfoRequest>());
         }

@@ -1,24 +1,29 @@
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Mvc.Ajax;
+using DABE.Core.Repositories;
 using DABE.Web.MetaBlog;
 
 namespace DABE.Web.Controllers
 {
-    public class MetaBlogController : Controller
+    public class MetaBlogController: Controller
     {
-        
-        public ActionResult GetUsersBlogs(MetaBlogGetUsersBlogRequest metaBlogGetUsersBlogRequest)
+        readonly IBlogRepository _blogRepository;
+
+        public MetaBlogController(IBlogRepository blogRepository)
         {
-            // Authenticate user....
-            // Get list of blogs for user
-            // Return list of blogs for user
-            throw new NotImplementedException();
+            _blogRepository = blogRepository;
         }
 
+        public ContentResult GetUsersBlogs(MetaBlogUserInfoRequest metaBlogUserInfoRequest)
+        {
+            var blogs =
+                _blogRepository.GetAll().Where(x => x.User.Username == metaBlogUserInfoRequest.Username).ToList();            
+            
 
+            var xml = XmlRpcSerializer.ToXmlArrayResponse(MetaBlogFormat.ConvertBlogs(blogs));
+
+            return new ContentResult() {Content = xml.ToString(), ContentType = "application/xml"};
+        }
     }
 }

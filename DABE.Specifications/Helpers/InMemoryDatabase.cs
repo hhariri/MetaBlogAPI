@@ -12,10 +12,12 @@ namespace DABE.Tests.Helpers
 {
     public abstract class InMemoryDatabase
     {
+
         protected static ISession Session;
 
         public abstract void SetupData();
 
+        
         public void InitializeData()
         {
             using (ITransaction transaction = Session.BeginTransaction())
@@ -36,7 +38,7 @@ namespace DABE.Tests.Helpers
 
             configuration.AddAssembly(typeof(Post).Assembly);
 
-            var sessionManager = new SessionManager(configuration, new SingleSessionStorage());
+            SessionManager.Init(configuration, new SingleSessionStorage());
 
             Session = SessionManager.Current;
 
@@ -44,6 +46,7 @@ namespace DABE.Tests.Helpers
 
             InitializeData();
 
+            
         }
 
 

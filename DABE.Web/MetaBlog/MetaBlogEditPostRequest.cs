@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace DABE.Web.MetaBlog
 {
-    public class MetaBlogEditPostRequest : MetaBlogBase
+    public class MetaBlogEditPostRequest : MetaBlogRequestBase
     {
         public string PostId { get; set; }
         public string Content { get; set; }
