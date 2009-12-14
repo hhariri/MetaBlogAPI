@@ -54,29 +54,38 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>3rdParty\Castle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>3rdParty\Castle.DynamicProxy2.dll</HintPath>
-    </Reference>
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DABE.Core\3rdParty\Iesi.Collections.dll</HintPath>
+      <HintPath>..\ExternalAssemblies\Iesi.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
-    <Reference Include="Machine.Specifications, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Machine.Specifications, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\Machine.Specifications.dll</HintPath>
+    </Reference>
     <Reference Include="Moq, Version=4.0.812.4, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>3rdParty\Moq.dll</HintPath>
+      <HintPath>..\ExternalAssemblies\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>3rdParty\NHibernate.dll</HintPath>
+      <HintPath>..\ExternalAssemblies\NHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq, Version=1.0.0.4000, Culture=neutral, PublicKeyToken=444cf6a87fdab271, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\NHibernate.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -109,10 +118,6 @@
     <Compile Include="Helpers\with_predefined_posts.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="3rdParty\Sqlite32\System.Data.SQLite.lib" />
-    <None Include="3rdParty\Sqlite64\System.Data.SQLite.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DABE.Core\DABE.Core.csproj">
       <Project>{BA7E1198-859F-4C88-93CC-A5FFB7798896}</Project>
       <Name>DABE.Core</Name>
@@ -121,39 +126,6 @@
       <Project>{065FD328-7E6A-4D76-8A3C-131535CFB2CB}</Project>
       <Name>DABE.Web</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="3rdParty\Castle.Core.dll" />
-    <Content Include="3rdParty\Castle.DynamicProxy2.dll" />
-    <Content Include="3rdParty\CommandLine.dll" />
-    <Content Include="3rdParty\Iesi.Collections.dll" />
-    <Content Include="3rdParty\Iesi.Collections.xml" />
-    <Content Include="3rdParty\log4net.dll" />
-    <Content Include="3rdParty\log4net.xml" />
-    <Content Include="3rdParty\Machine.Specifications.dll" />
-    <Content Include="3rdParty\Machine.Specifications.Reporting.dll" />
-    <Content Include="3rdParty\Machine.Specifications.XUnit.dll" />
-    <Content Include="3rdParty\Moq.dll" />
-    <Content Include="3rdParty\Moq.pdb" />
-    <Content Include="3rdParty\NHibernate.ByteCode.Castle.dll" />
-    <Content Include="3rdParty\NHibernate.dll" />
-    <Content Include="3rdParty\NHibernate.xml" />
-    <Content Include="3rdParty\sqlite3.dll" />
-    <Content Include="3rdParty\Sqlite32\System.Data.SQLite.DLL" />
-    <Content Include="3rdParty\Sqlite32\System.Data.SQLite.Linq.dll" />
-    <Content Include="3rdParty\Sqlite32\System.Data.SQLite.XML" />
-    <Content Include="3rdParty\Sqlite64\System.Data.SQLite.DLL" />
-    <Content Include="3rdParty\Sqlite64\System.Data.SQLite.Linq.dll" />
-    <Content Include="3rdParty\Sqlite64\System.Data.SQLite.XML" />
-    <Content Include="3rdParty\TestDriven.Framework.dll" />
-    <Content Include="3rdParty\xunit.dll" />
-    <Content Include="3rdParty\xunit.extensions.dll" />
-    <Content Include="3rdParty\xunit.extensions.xml" />
-    <Content Include="3rdParty\xunit.runner.msbuild.dll" />
-    <Content Include="3rdParty\xunit.runner.tdnet.dll" />
-    <Content Include="3rdParty\xunit.runner.utility.dll" />
-    <Content Include="3rdParty\xunit.runner.utility.xml" />
-    <Content Include="3rdParty\xunit.xml" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -183,7 +155,7 @@
   <PropertyGroup>
     <PostBuildEvent>
     
-    copy $(ProjectDir)\3rdParty\sqlite3.dll $(TargetDir)
-    copy $(ProjectDir)\3rdParty\Sqlite32\*.* $(TargetDir)</PostBuildEvent>
+    copy $(ProjectDir)\..\ExternalAssemblies\sqlite3.dll $(TargetDir)
+    copy $(ProjectDir)\..\ExternalAssemblies\Sqlite32\*.* $(TargetDir)</PostBuildEvent>
   </PropertyGroup>
 </Project>

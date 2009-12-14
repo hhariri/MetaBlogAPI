@@ -53,16 +53,29 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DABE.Web\Bin\Iesi.Collections.dll</HintPath>
+      <HintPath>..\ExternalAssemblies\Iesi.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
-    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalAssemblies\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate.Linq, Version=1.0.0.4000, Culture=neutral, PublicKeyToken=444cf6a87fdab271, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>3rdParty\NHibernate.Linq.dll</HintPath>
+      <HintPath>..\ExternalAssemblies\NHibernate.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -97,29 +110,10 @@
     <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="3rdParty\Antlr3.Runtime.dll" />
-    <Content Include="3rdParty\Castle.Core.dll" />
-    <Content Include="3rdParty\Castle.Core.xml" />
-    <Content Include="3rdParty\Castle.DynamicProxy2.dll" />
-    <Content Include="3rdParty\Castle.DynamicProxy2.xml" />
-    <Content Include="3rdParty\Iesi.Collections.dll" />
-    <Content Include="3rdParty\Iesi.Collections.xml" />
-    <Content Include="3rdParty\log4net.dll" />
-    <Content Include="3rdParty\log4net.xml" />
-    <Content Include="3rdParty\NHibernate.ByteCode.Castle.dll" />
-    <Content Include="3rdParty\NHibernate.ByteCode.Castle.Tests.dll" />
-    <Content Include="3rdParty\NHibernate.ByteCode.Castle.xml" />
-    <Content Include="3rdParty\NHibernate.dll" />
-    <Content Include="3rdParty\NHibernate.xml" />
     <EmbeddedResource Include="Entities\Category.hbm.xml" />
     <EmbeddedResource Include="Entities\User.hbm.xml" />
     <EmbeddedResource Include="Entities\Blog.hbm.xml" />
     <EmbeddedResource Include="Entities\Post.hbm.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="3rdParty\nhibernate-configuration.xsd" />
-    <None Include="3rdParty\nhibernate-mapping.xsd" />
-    <None Include="3rdParty\NHibernate.ByteCode.Castle.Tests.dll.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
