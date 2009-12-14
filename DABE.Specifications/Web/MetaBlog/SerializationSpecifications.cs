@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Linq;
 using DABE.Web.MetaBlog;
 using Machine.Specifications;
@@ -132,9 +133,8 @@ namespace DABE.Specifications.Web.MetaBlog
 
         Because of = () =>
                          {
-                             data = new MetaBlogUserInfoRequest();
+                             data = new MetaBlogUserInfoRequest(xml.Element("methodCall").Element("params").Elements("param").ToList());
 
-                             data.LoadXml(xml);
                          };
 
         It should_correctly_assign_properties_to_object = () =>
@@ -180,9 +180,8 @@ namespace DABE.Specifications.Web.MetaBlog
 
         Because of = () =>
                          {
-                             data = new MetaBlogNewPostRequest();
+                             data = new MetaBlogNewPostRequest(xml.Element("methodCall").Element("params").Elements("param").ToList());
 
-                             data.LoadXml(xml);
                          };
 
         It should_correctly_assign_properties_to_object = () =>
@@ -232,9 +231,7 @@ namespace DABE.Specifications.Web.MetaBlog
 
         Because of = () =>
                          {
-                             data = new MetaBlogEditPostRequest();
-
-                             data.LoadXml(xml);
+                             data = new MetaBlogEditPostRequest(xml.Element("methodCall").Element("params").Elements("param").ToList());
                          };
 
         It should_correctly_assign_properties_to_object = () =>

@@ -14,7 +14,7 @@ namespace DABE.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.IgnoreRoute("favico.ico");
+            routes.IgnoreRoute("favicon.ico");
 
             routes.MapRoute(
                 "Default",                                              // Route name
@@ -33,7 +33,7 @@ namespace DABE.Web
             Bootstrapper.Init(this);
 
             ControllerBuilder.Current.SetControllerFactory(new StructureMapControllerFactory());
-            ModelBinders.Binders.Add(typeof(MetaBlogUserInfoRequest), new MetaBlogRequestBinder<MetaBlogUserInfoRequest>());
+            ModelBinders.Binders.Add(typeof(MetaBlogRequest), new MetaBlogRequestBinder());
         }
     }
 }

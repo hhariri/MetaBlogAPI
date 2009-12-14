@@ -42,6 +42,10 @@
   <ItemGroup>
     <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
     <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DABE.Specifications\3rdParty\Iesi.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
     <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
     <Reference Include="StructureMap, Version=2.5.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL" />
@@ -85,12 +89,14 @@
     <Compile Include="Controllers\MetaBlogController.cs" />
     <Compile Include="MetaBlog\MetaBlogEditPostRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogFormat.cs" />
+    <Compile Include="MetaBlog\MetaBlogGetCategoriesRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogGetTemplateRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogNewPostRequest.cs" />
+    <Compile Include="MetaBlog\MetaBlogRequest.cs" />
     <Compile Include="MetaBlog\MetaBlogSetTemplateRequest.cs" />
     <Compile Include="MetaBlog\XmlRpcSerializer.cs" />
     <Compile Include="MetaBlog\MetaBlogRequestBinder.cs" />
-    <Compile Include="MetaBlog\MetaBlogRequestBase.cs" />
+    <Compile Include="MetaBlog\MetaBlogRequestCommon.cs" />
     <Compile Include="MetaBlog\MetaBlogUserInfoRequest.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -107,6 +113,7 @@
     <Content Include="3rdParty\NHibernate.dll" />
     <Content Include="3rdParty\StructureMap.dll" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.3.2.js" />
@@ -167,8 +174,7 @@
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>5000</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/DABE.Web</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

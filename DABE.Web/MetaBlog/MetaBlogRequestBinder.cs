@@ -1,12 +1,13 @@
 using System;
+using System.IO;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace DABE.Web.MetaBlog
 {
-    public class MetaBlogRequestBinder<T> : IModelBinder where T: MetaBlogRequestBase, new()
+
+    public class MetaBlogRequestBinder: IModelBinder
     {
         public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
@@ -15,18 +16,18 @@ namespace DABE.Web.MetaBlog
                 throw new ArgumentNullException("controllerContext");
             }
 
-            var model = new T();
-
             try
             {
-                model.LoadXml(controllerContext.HttpContext.Request.InputStream);
+                var model = new MetaBlogRequest(controllerContext.HttpContext.Request.InputStream);
+
+                return model;
             }
             catch (Exception)
             {
                 throw new HttpException("Invalid Request");
             }
 
-            return model;
+            
         }
     }
 }

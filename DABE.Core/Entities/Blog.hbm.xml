@@ -10,5 +10,9 @@
       <key column="PostId" />
       <one-to-many class="Post" />
     </set>
+    <set name="Categories" cascade="all" inverse="true">
+      <key column="CategoriyId" />
+      <one-to-many class="Category" />
+    </set>
   </class>  
 </hibernate-mapping>

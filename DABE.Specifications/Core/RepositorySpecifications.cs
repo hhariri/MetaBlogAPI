@@ -121,4 +121,26 @@ namespace DABE.Specifications.Core
         
     }
 
+    public class when_retrieving_categories_of_a_blog: with_predefined_blogs
+    {
+        Establish context = () =>
+        {
+            blogRepository = new BlogRepository();
+        };
+
+        Because of = () =>
+        {
+            blogs = blogRepository.GetAll(x => x.Name == blog1_name).ToList();
+        };
+
+        It should_return_all_categories_for_the_blog = () =>
+        {
+            blogs[0].Categories.Count.ShouldEqual(3);
+        };
+
+        static IList<Blog> blogs;
+        static IBlogRepository blogRepository;
+
+        
+    }
 }

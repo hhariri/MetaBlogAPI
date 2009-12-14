@@ -21,6 +21,18 @@ namespace DABE.Specifications.Helpers
             var blog2 = new Blog { Name = blog2_name };
             var blog3 = new Blog { Name = blog3_name, User = user};
 
+            var category1 = new Category()
+                           {Blog = blog1, Description = "Description1", HtmlUrl = "htmlurl1", RssUrl = "rssurl1"};
+            var category2 = new Category()
+                           {Blog = blog1, Description = "Description2", HtmlUrl = "htmlurl2", RssUrl = "rssurl2"};
+            var category3 = new Category()
+                           {Blog = blog1, Description = "Description3", HtmlUrl = "htmlurl3", RssUrl = "rssurl3"};
+
+
+            blog1.AddCategory(category1);
+            blog1.AddCategory(category2);
+            blog1.AddCategory(category3);
+
             Session.Save(user);
             Session.Save(blog1);
             Session.Save(blog2);

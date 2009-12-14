@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web.Mvc;
+using System.Xml.Linq;
 using DABE.Core.Repositories;
 using DABE.Web.MetaBlog;
 
@@ -15,15 +18,37 @@ namespace DABE.Web.Controllers
             _blogRepository = blogRepository;
         }
 
-        public ContentResult GetUsersBlogs(MetaBlogUserInfoRequest metaBlogUserInfoRequest)
+        public ActionResult ProcessRequest(MetaBlogRequest metaBlogRequest)
         {
-            var blogs =
-                _blogRepository.GetAll().Where(x => x.User.Username == metaBlogUserInfoRequest.Username).ToList();            
+            Type type = GetType();
+
+            var xml = type.InvokeMember(metaBlogRequest.MethodCall, BindingFlags.Instance | BindingFlags.Public | BindingFlags.InvokeMethod, null, this,
+                              new object[] {metaBlogRequest.Params});
             
 
-            var xml = XmlRpcSerializer.ToXmlArrayResponse(MetaBlogFormat.ConvertBlogs(blogs));
-
-            return new ContentResult() {Content = xml.ToString(), ContentType = "application/xml"};
+            return new ContentResult() {Content = xml.ToString(), ContentType = "text/xml"};
         }
+
+        public XDocument getUsersBlogs(IList<XElement> request)
+        {
+            var metaBlogUserInfoRequest = new MetaBlogUserInfoRequest(request);
+
+            var blogs =
+                _blogRepository.GetAll().Where(x => x.User.Username == metaBlogUserInfoRequest.Username).ToList();
+
+
+            return XmlRpcSerializer.ToXmlArrayResponse(MetaBlogFormat.ConvertBlogs(blogs));
+        }
+
+        public XDocument getCategories(IList<XElement> request)
+        {
+            var metaBlogGetCategoriesRequest = new MetaBlogGetCategoriesRequest(request);
+
+            var blog = _blogRepository.GetAll().Where(x => x.Id.ToString() == metaBlogGetCategoriesRequest.BlogId).FirstOrDefault();
+
+            return XmlRpcSerializer.ToXmlArrayResponse(MetaBlogFormat.ConvertCategories(blog.Categories.ToList()));
+
+        }
+
     }
 }
